@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-//REQ_001: the system shall be capable of determing if a players input value is valid
+//REQ_001: the system shall be capable of determing if a players input value is valid and returning a winner
 int main() {
 
 	printf("This is where the game would go\n");
