@@ -30,8 +30,16 @@ namespace REQ001
 		}
 		TEST_METHOD(OutcomeDeciderReturnValuePlayer2)
 		{
-			char* Result = OutcomeDecider("Rock", "Scissors");
+			char* Result = OutcomeDecider("Paper", "Scissors");
 			char* Expected = "Player2";
+			int outcome = strcmp(Result, Expected);
+			int actual = 0;
+			Assert::AreEqual(actual, outcome);
+		}
+		TEST_METHOD(OutcomeDeciderReturnValueDraw)
+		{
+			char* Result = OutcomeDecider("Rock", "Paper");
+			char* Expected = "Invalid";
 			int outcome = strcmp(Result, Expected);
 			int actual = 0;
 			Assert::AreEqual(actual, outcome);
