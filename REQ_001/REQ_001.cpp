@@ -38,7 +38,7 @@ namespace REQ001
 		}
 		TEST_METHOD(OutcomeDeciderReturnValueDraw)
 		{
-			char* Result = OutcomeDecider("Rock", "Paper");
+			char* Result = OutcomeDecider("rock", "paper");
 			char* Expected = "Invalid";
 			int outcome = strcmp(Result, Expected);
 			int actual = 0;
